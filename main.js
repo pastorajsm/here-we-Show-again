@@ -222,7 +222,7 @@ parentElement.append(kata13Heading)
 
 for (let index = 0; index < sampleArray.length; index += 1) {
     console.log(sampleArray[index])
-    if (sampleArray[index] % 1 === 0) {
+    if (sampleArray[index] % 2 === 1) {
 
 
 
@@ -234,6 +234,108 @@ for (let index = 0; index < sampleArray.length; index += 1) {
 
 
 }
+
+//kata 14
+
+
+
+const kata14Heading = document.createElement('h3')
+kata14Heading.append('kata 14')
+parentElement.append(kata14Heading)
+
+for (let index = 0; index < sampleArray.length; index += 1) {
+
+    let numberedSquared = sampleArray[index] * sampleArray[index]
+    let kata14Numbers = document.createElement('p')
+    kata14Numbers.append(numberedSquared)
+    kata14Heading.append(kata14Numbers)
+}
+
+
+//kata 15
+
+const kata15Heading = document.createElement('h3')
+kata15Heading.append('kata 15')
+parentElement.append(kata15Heading)
+
+for (let index = 0; index < sampleArray.length; index += 1) {
+
+    let sum = 0
+    let numbered = sampleArray[index]
+    let innerArray = numbered.toString().split("")
+    for (let innerIndex = 0; innerIndex < innerArray.length; innerIndex += 1) {
+
+        sum += Number(innerArray[innerIndex])
+    }
+    let kata15Numbers = document.createElement('p')
+    kata15Numbers.append(sum)
+    kata15Heading.append(kata15Numbers)
+
+}
+
+//kata 16
+
+let kata16Heading = document.createElement('h3')
+kata16Heading.append('kata16')
+parentElement.append(kata16Heading)
+
+let kata16Sum = 0
+
+for (let index = 0; index < sampleArray.length; index += 1) {
+
+
+    kata16Sum += sampleArray[index]
+}
+let kata16Numbers = document.createElement('p')
+kata16Numbers.append(kata16Sum)
+kata16Heading.append(kata16Numbers)
+
+//kata 17
+
+
+const kata17Heading = document.createElement('h3')
+kata17Heading.append('kata 17')
+parentElement.append(kata17Heading)
+
+let smallestArrayNum = sampleArray[0]
+
+for (let index = 0; index < sampleArray.length; index += 1) {
+
+    if (sampleArray[index] < smallestArrayNum) {
+        smallestArrayNum = sampleArray[index]
+        console.log(smallestArrayNum)
+
+    }
+
+}
+let kata17Numbers = document.createElement('p')
+kata17Numbers.append(smallestArrayNum)
+kata17Heading.append(kata17Numbers)
+
+
+//kata 18
+
+
+const kata18Heading = document.createElement('h3')
+kata18Heading.append('kata 18')
+parentElement.append(kata18Heading)
+
+
+let largestArrayNum = sampleArray[0]
+
+for (let index = 0; index < sampleArray.length; index += 1) {
+
+    if (sampleArray[index] > largestArrayNum) {
+        largestArrayNum = sampleArray[index]
+        console.log(largestArrayNum)
+
+    }
+
+}
+let kata18Numbers = document.createElement('p')
+kata18Numbers.append(largestArrayNum)
+kata18Heading.append(kata18Numbers)
+
 
 
 // Display the 20 elements of sampleArray. (469, 755, 244, …, 940, 472)
